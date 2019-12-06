@@ -124,9 +124,10 @@ end
      team.each do |attribute, data|
        if attribute == :players
          data.each do |player|
+           binding pry
            if player[:player_name] == players_name
              return player[:points]
-             binding pry
+             
             end
            end
          end
