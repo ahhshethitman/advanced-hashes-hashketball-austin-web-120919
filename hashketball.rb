@@ -202,22 +202,31 @@ end
  
  #################################################################################
  
-def big_shoe_rebounds
-  biggest = 0
-  rebounds = 0
-  game_hash.each do |home_away, keys|
-    keys[:players].each do |player|
-      size = player[:shoe]
-      if size > biggest
-        biggest = size
-        rebounds = player[:rebounds]
-      end
+#def big_shoe_rebounds
+ # biggest = 0
+ # rebounds = 0
+ # game_hash.each do |home_away, keys|
+   # keys[:players].each do |player|
+     # size = player[:shoe]
+     # if size > biggest
+        #biggest = size
+        #rebounds = player[:rebounds]
+     # end
+    #end
+  #end
+  #rebounds
+#end
+   
+  def big_shoe_rebounds
+  names = []
+  shoe_sizes = []
+
+  game_hash.each do |team, chars|
+    game_hash[team][:players].each do |name,stats|
+      names.push(name)
+      shoe_sizes.push(stats[:shoe])
     end
   end
-  rebounds
-end
-   
-   
    
    
    
