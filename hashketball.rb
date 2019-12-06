@@ -123,6 +123,10 @@ end
   game_hash.each do |place, team|
     team.each do |attribute, data|
       if attribute == :players
+        data.each do |player|
+          binding.pry
+        end 
+    end
       end
      end
    end
