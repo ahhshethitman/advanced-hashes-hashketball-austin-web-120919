@@ -119,7 +119,7 @@ def game_hash
     }
   }
 end
-  
+#################################################################################
  def num_points_scored(players_name)
   game_hash.each do |place, team|
     team.each do |attribute, data|
@@ -134,8 +134,7 @@ end
   end
 end
    
- 
- 
+#################################################################################
  def shoe_size(players_name)
    game_hash.each do |place, team|
      team.each do |attribute, data|
@@ -149,7 +148,8 @@ end
     end
    end
  end
- 
+
+#################################################################################
  def team_colors(team_name)
    game_hash.each do |place, team|
      if team[:team_name] == team_name
@@ -163,7 +163,7 @@ end
       team[:team_name]
     end
   end
-  
+#################################################################################
   def player_numbers(team_name)
     newnum = []
     game_hash.each do |place, team|
@@ -180,7 +180,7 @@ end
   end
   newnum
 end
- 
+  #################################################################################
  
  
    
