@@ -125,7 +125,7 @@ end
        if attribute == :players
          data.each do |player|
            if players[:player_name] == players_name
-             return player[:points]
+             return players[:points]
              
              end
            end
