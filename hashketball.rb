@@ -192,9 +192,9 @@ end
              new_hash = player.delete_if do |k, v|
                k == :player_name
              end
-   end
- end
- end
+          end
+       end
+    end
  end
  end
  new_hash
