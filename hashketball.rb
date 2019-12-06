@@ -124,12 +124,12 @@ end
     team.each do |attribute, data|
       if attribute == :players
         data.each do |player|
-          binding.pry
+          if player
         end 
-    end
       end
-     end
-   end
+    end
+  end
+end
    
  
  
