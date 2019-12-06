@@ -173,12 +173,12 @@ end
             data.each do |player|
               newnum << player[:number]
     
+          end
+        end
+      end
+    end
   end
-end
-end
-end
-end
-newnum
+  newnum
 end
  
  
