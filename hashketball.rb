@@ -202,7 +202,7 @@ end
  
  #################################################################################
  
- def rebounds_for_largest_shoe_size(game)
+ def rebounds_for_largest_shoe_size()
   max_player = nil
   game.each do |team, team_hash|
     team_hash[:players].each do |player, player_hash|
